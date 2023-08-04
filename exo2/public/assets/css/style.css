@@ -1,0 +1,19 @@
+.imgLogo {
+    height: 5vh;
+    width: 10vh;
+}
+header{
+    background-color: rgb(77, 190, 228);
+}
+header p{
+    text-align: center;
+    font-size: 20px;  
+}
+main .results{
+    height: 10vh;
+    width: 50vh;
+    border: 2px solid black ;
+    text-align: center;
+    font-size: 20px;
+    color: blueviolet;
+}
