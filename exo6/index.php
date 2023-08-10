@@ -23,16 +23,7 @@ $name = 'Nathalie';
         </div>
     </header>
     <main class="container- fluid">
-        <div class="row">
-            <div class="results position-absolute top-50 start-50 translate-middle ">
-                <p>
-                    <?php
-                    echo "$name";
-                    ?>
-                </p>
-                <p><?=$name?></p>
-            </div>
-        </div>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
