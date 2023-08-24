@@ -1,4 +1,6 @@
 <?php
+$formatter = new IntlDateFormatter('fr_FR', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+$formatter->setPattern('eeee d MMMM yyyy')
 ?>
 
 <!DOCTYPE html>
@@ -25,9 +27,8 @@ Bonus : Le faire en français.</p>
     <main class="">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <a href="test.php?idTest"> test </a>
                 <?php
-
+                    echo $formatter->format(new DateTime());
                 ?>
             </div>
         </div>

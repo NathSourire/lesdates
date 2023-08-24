@@ -24,9 +24,9 @@
     <main class="">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <a href="test.php?idTest"> test </a>
                 <?php
-
+                $number = cal_days_in_month(CAL_GREGORIAN, 2, 2016); // 31
+                echo 'Il y a '. $number . ' jours dans le mois de fevrier 2016';
                 ?>
             </div>
         </div>

@@ -24,9 +24,8 @@
     <main class="">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <a href="test.php?idTest"> test </a>
                 <?php
-
+                    echo date('d/m/Y'). '<br>';
                 ?>
             </div>
         </div>

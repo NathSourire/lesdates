@@ -24,9 +24,9 @@
     <main class="">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <a href="test.php?idTest"> test </a>
                 <?php
-
+                    $date = "24-08-2023";
+                    echo date('d-m-Y', strtotime($date. ' - 22 days'));
                 ?>
             </div>
         </div>

@@ -1,4 +1,6 @@
 <?php
+$month = array( 1 => 'Janvier',2 => 'Février',3 => 'Mars',4 => 'Avril',5 => 'Mai',6 => 'Juin',
+7 => 'Juillet',8 => 'Août',9=> 'Septembre',10=> 'Octobre',11 => 'Novembre',12 => 'Décembre');
 ?>
 
 <!DOCTYPE html>
@@ -19,13 +21,17 @@
             <img class="imgLogo col-3" src="./public/assets/img/PHP-logo.png" alt="Logo PHP">
             <h1 class="col-7">Exercice 9</h1>
             <p>Faire un formulaire avec deux listes déroulantes. La première sert à choisir le mois, et le deuxième permet d'avoir l'année.  
-En fonction des choix, afficher un calendrier comme celui-ci : </p>
+En fonction des choix, afficher un calendrier comme celui-ci : https://www.calendrier-imprimer.fr/calendrier/2021/calendrier-janvier-2021-modele-01.jpg </p>
         </div>
     </header>
     <main class="">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <a href="test.php?idTest"> test </a>
+                <form methode="post" action="index.php">
+                    <label for="month">Date</label>
+                    <input type="month" name="month" />
+                    <button type="submit">Envoyer!</button>
+                </form>
                 <?php
 
                 ?>

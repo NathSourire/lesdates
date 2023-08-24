@@ -1,4 +1,8 @@
 <?php
+date_default_timezone_set("Europe/Paris");
+$formatter = new IntlDateFormatter('fr_FR', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+$formatter->setPattern('eeee d MMMM yyyy HH:mm');
+
 ?>
 
 <!DOCTYPE html>
@@ -25,9 +29,11 @@ Afficher le timestamp du mardi 2 août 2016 à 15h00.</p>
     <main class="">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <a href="test.php?idTest"> test </a>
                 <?php
-
+                    echo $formatter->format(new DateTime()).'<br>';
+                    echo 'Timestamp Aujourd\'hui : '. time().'<br>';
+                    echo 'Timestamp mardi 2 août 2016 à 15h00 : '. strtotime('2016/02/08 15:00:00 ').'<br>';
+                    echo 'Ou Timestamp mardi 2 août 2016 à 15h00 : '. mktime(15,0,0,2,8,2016);
                 ?>
             </div>
         </div>

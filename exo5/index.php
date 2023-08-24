@@ -24,9 +24,11 @@
     <main class="">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <a href="test.php?idTest"> test </a>
                 <?php
-
+                $start_date = new DateTime("2016-05-16");
+                $end_date = new DateTime("2023-08-24");
+                $interval = $start_date->diff($end_date);
+                echo $interval->format('%R%a days');
                 ?>
             </div>
         </div>
