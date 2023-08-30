@@ -1,4 +1,7 @@
 <?php
+$date = new DateTime();
+var_dump($date);
+$dateFormatted =$date ->format('d/m/Y')
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +29,7 @@
             <div class="results position-absolute top-50 start-50 translate-middle ">
                 <?php
                     echo date('d/m/Y'). '<br>';
+                    echo $dateFormatted;
                 ?>
             </div>
         </div>
